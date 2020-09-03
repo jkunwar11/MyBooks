@@ -34,7 +34,6 @@ public class Author {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -54,7 +53,7 @@ public class Author {
     public void setNationality(String nationality) {
         this.nationality = nationality;
     }
-
+//test
     public Author(String name, int numOfBooks, String nationality) {
         this.name = name;
         this.numOfBooks = numOfBooks;
