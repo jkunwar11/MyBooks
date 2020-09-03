@@ -1,0 +1,15 @@
+plugins { //plugins project, and will use Java plugins to complete this
+    id 'java'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories { //gradle will download the repositories you need and will incorporate them into your project (like junit)
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
