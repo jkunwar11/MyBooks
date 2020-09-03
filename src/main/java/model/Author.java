@@ -2,6 +2,8 @@ package model;
 
 import java.util.Objects;
 
+//This is from feature B
+
 public class Author {
     private String name;
     private int numOfBooks;
@@ -53,7 +55,7 @@ public class Author {
     public void setNationality(String nationality) {
         this.nationality = nationality;
     }
-//test v
+
     public Author(String name, int numOfBooks, String nationality) {
         this.name = name;
         this.numOfBooks = numOfBooks;
