@@ -7,7 +7,7 @@ public class Book {
     private String ISBN;
     private String publisher;
     private int year;
-    private String author; //assume each book only has one author
+    private Author author; //assume each book only has one author
 
     //need a constructor, setters, getters, and hash functions
 
@@ -55,7 +55,7 @@ public class Book {
         this.year = year;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(Author author) {
         this.author = author;
     }
 
@@ -75,12 +75,12 @@ public class Book {
         return year;
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
     //go to generate, and you can create a constructor
-    public Book(String title, String ISBN, String publisher, int year, String author) {
+    public Book(String title, String ISBN, String publisher, int year, Author author) {
         this.title = title;
         this.ISBN = ISBN;
         this.publisher = publisher;
