@@ -1,13 +1,13 @@
 package model;
 
 import java.util.Objects;
-
+import java.util.List;
 public class Book {
     private String title;
     private String ISBN;
     private String publisher;
     private int year;
-    private Author author; //assume each book only has one author
+    private List<Author> author; //assume each book only has one author
 
     //need a constructor, setters, getters, and hash functions
 
@@ -55,7 +55,7 @@ public class Book {
         this.year = year;
     }
 
-    public void setAuthor(Author author) {
+    public void setAuthor(List<Author> author) {
         this.author = author;
     }
 
@@ -75,12 +75,12 @@ public class Book {
         return year;
     }
 
-    public Author getAuthor() {
+    public List<Author> getAuthor() {
         return author;
     }
 
     //go to generate, and you can create a constructor
-    public Book(String title, String ISBN, String publisher, int year, Author author) {
+    public Book(String title, String ISBN, String publisher, int year, List<Author> author) {
         this.title = title;
         this.ISBN = ISBN;
         this.publisher = publisher;
